@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+	<html>
+<link rel="stylesheet" href="main.css">
+		<head><title>
+			This is the dawning of the age of Aquarius!	
+		</title></head>
+<ul class="raw">
+<% data.each do |item| %>
+<li>
+	<%= item["title"]%>   
+	<%= item["Images"].first["url_170x135"]%>
+ 	<%= item["title"]%>
+	<%= item["currency_code"]%>
+	<%= item["price"]%>
+	<%= item["login_name"]%>
+	<%= item["shop_name"]%>
+<!--	<%= item["title"]%>
+	<%= item["title"]%> -->
+</li>
+<% end %>
+</ul>
