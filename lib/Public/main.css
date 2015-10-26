@@ -1,4 +1,72 @@
-.raw {
-	display: grid;
+/*.raw {
+	display: inline-block;
 	color: green;
+}*/
+
+ul {
+	list-style: none;
+	font-family: "Graphik Web","Arial","Helvetica",sans-serif;
+	}
+
+.grid {
+        border: .125rem solid;
+        text-align: justify;
+    }
+
+.nav-bar {
+	
+	background-color: white;
+	border-bottom: 1px, gray;
+
 }
+
+.logo img{
+	max-width: 150px; 
+	max-height: 72px;
+}
+
+.junk {
+	max-width: 65%;
+	float: right;
+    font-size: 1rem;
+    display: block;
+    background: white;
+    border: .125em solid gray;
+    border-width: 1px;
+    width: 30%;
+    padding: 2%
+	}
+
+.currency {
+	color: green;
+	}
+
+.price {
+	color: green;
+	}
+
+.pic img {
+	border: 1px solid lightgray;
+  width: 30%;
+	}
+
+.sidebar-links{
+	position: left;
+	background-color: white;
+	font-family: Arial;
+	color: #0192B5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

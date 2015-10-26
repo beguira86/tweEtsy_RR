@@ -2,20 +2,74 @@
 	<html>
 <link rel="stylesheet" href="main.css">
 		<head><title>
-			This is the dawning of the age of Aquarius!	
-		</title></head>
-<ul class="raw">
-<% data.each do |item| %>
-<li>
-	<%= item["title"]%>   
-	<%= item["Images"].first["url_170x135"]%>
- 	<%= item["title"]%>
-	<%= item["currency_code"]%>
-	<%= item["price"]%>
-	<%= item["login_name"]%>
-	<%= item["shop_name"]%>
-<!--	<%= item["title"]%>
-	<%= item["title"]%> -->
-</li>
+			This is the dawning of the age of Aquarius!  EVENTUALLY, this should say something like [params: q]
+		</title>
+		<div class="nav-bar">
+			<div class="logo"><img src="http://apifortress.com/wp-content/uploads/2015/08/etsy.jpg"</div>
+			<div class="search-bar">                </div>
+		</div>
+
+		</head>
+		
+
+
+
+		<body class="grid" style="background-color: #F5F5F1;">
+
+		
+		<div class="sidebar">
+
+    	    <ul class="sidebar-links">
+    		    <li><a href="https://www.etsy.com/search/clothing?q=psychedelic">Clothing & Accessories</a></li>
+		        <li><a href="https://www.etsy.com/search/art-and-collectibles?q=psychedelic">Art & Collectibles</a></li>
+		        <li><a href="https://www.etsy.com/search/jewelry?q=psychedelic">Jewelry</a></li>
+		        <li><a href="https://www.etsy.com/search/home-and-living?q=psychadelic">Home & Living</a></li>
+		        <li><a href="https://www.etsy.com/search/accessories?q=psychedelic">Accessories</a></li>
+		        <li><a href="https://www.etsy.com/search/bags-and-purses?q=psychedelic">Bags & Purses</a></li>
+		        <li><a href="https://www.etsy.com/search/books-movies-and-music?q=psychedelic">Books, Movies & Music</a></li>
+		        <li><a href="https://www.etsy.com/search/craft-supplies-and-tools?q=psychedelic">Craft Supplies & Tools</a></li>
+		        <li><a href="https://www.etsy.com/search/electronics-and-accessories?q=psychedelic">Electroincs & Accessories</a></li>
+		        <li><a href="https://www.etsy.com/search/paper-and-party-supplies?q=psychedelic">Paper & Party Supplies</a></li>
+		        <li><a href="https://www.etsy.com/search/bath-and-beauty?q=psychedelic">Bath & Beauty</a></li>
+		        <li><a href="https://www.etsy.com/search/shoes?q=psychedelic">Shoes</a></li>
+		        <li><a href="https://www.etsy.com/search/toys-and-games?q=psychedelic">Toys & Games</a></li>
+		        <li><a href="https://www.etsy.com/search/pet-supplies?q=psychedelic">Pet Supplies</a></li>
+		        <li><a href="https://www.etsy.com/search/weddings?q=psychedelic">Weddings</a></li>
+		    </ul>
+
+	    </div>
+
+
+
+		<div class="junk">
+			<% data.each do |item| %>
+			<ul>
+				<li class="pic">
+					<img src="<%= item["Images"].first["url_170x135"]%>">
+				</li>
+				
+				<li class="item_title">
+					<%= item["title"]%>
+				</li>
+				
+				<li class="owner">
+					<%= item["Shop"]["shop_name"]%>
+				</li>
+
+				<li class="price">
+					$<%= item["price"]%>
+				</li>
+
+				<li class="currency">
+					<%= item["currency_code"]%>
+				</li>
+
+				
+<!--	<%= item["url"]%>
+	<%= item["Shop"].first%>
+	<%= item ["Shop"]["hgjhglhglhglhkg"]%> -->
 <% end %>
 </ul>
+</div>
+
+		</body>
